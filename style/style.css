@@ -1,0 +1,484 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.lgcontainer {
+  width: 25%;
+  height: 4rem;
+  background-color: #FFF;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    /* position joistic */
+
+    left: -550px;
+}
+
+.logo {
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position joistic */
+
+  left: 625px;
+}
+
+/* navbar */
+.navbar {
+width: 100%;
+height: 4rem;
+background-color: #FFF;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.menu {
+  background: #37A8EC;
+  height: 4rem;
+  width: 100%;
+  position: relative;
+
+  /* position joistic */
+
+  right: 0;
+}
+.menu ol {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.menu > ol {
+  max-width: 1000px;
+  padding: 0 2rem;
+  display: flex;
+}
+.menu > ol > .menu-item {
+  flex: 1;
+  padding: 0.75rem 0;
+}
+.menu > ol > .menu-item:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  bottom: 5px;
+  left: calc(50% - 2px);
+  background: #FECEAB;
+  will-change: transform;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+.menu > ol > .menu-item:hover:after {
+  transform: scale(1);
+}
+.menu-item {
+  position: relative;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.menu-item a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  color: #FFF;
+}
+.sub-menu .menu-item {
+  padding: 0.75rem 0;
+  background: #37A8EC;
+  opacity: 0;
+  transform-origin: bottom;
+  animation: enter 0.2s ease forwards;
+}
+.sub-menu .menu-item:nth-child(1) {
+  animation-duration: 0.2s;
+  animation-delay: 0s;
+}
+.sub-menu .menu-item:nth-child(2) {
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+}
+.sub-menu .menu-item:nth-child(3) {
+  animation-duration: 0.4s;
+  animation-delay: 0.2s;
+}
+.sub-menu .menu-item:hover {
+  background: #FFF;
+}
+.sub-menu .menu-item a {
+  padding: 0 0.75rem;
+}
+  
+.sub-menu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+.menu-item:hover > .sub-menu {
+  display: block;
+}
+  
+html, body {
+  font-size: 16px;
+  font-family: "Fira Mono", monospace;
+  margin: 0;
+}
+  
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+  
+a {
+  text-decoration: none;
+}
+  
+.esas {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.nurse  {
+  background-image: url(../img//adult-g438251eff_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  background-color: #fcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+.info {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+  bottom: -68px;
+}
+
+.opac {
+  width: 100%;
+  height: 1000px;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.leftside {
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.rightside {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  float: right;
+}
+
+.infoyuxari {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  background-color: #FFF;
+  z-index: 5;
+
+  right: 126px;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #6c6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.contanineras {
+  width: 50%;
+  height: 75%;
+  position: absolute;
+  z-index: 5;
+}
+
+.buttonc {
+  width: 100%;
+  height: 25%;
+  position: relative;
+  top: 169px;
+  left: 143px;
+   background-color: #37A8EC; 
+}
+
+.yazicont {
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  color: #FFF;
+  /* background-color: #fcc; */
+  left: 143px;
+}
+
+.care {
+  font-size: 75px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  left: 143px;
+}
+
+.yazi2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+}
+
+.lpainfo {
+  width: 100%;
+  height: 300px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  top: -175px;
+}
+
+.infoborder1 {
+  width: 20%;
+  height: 100%;
+  background-color: #37A8EC;
+  border: #1376b3 solid 2px;
+  transition: 0.5s;
+}
+
+.infoborder1:hover {
+  background-color: #1376b3;
+  box-shadow: black;
+}
+
+.infoborder2 {
+  width: 20%;
+  height: 100%;
+  background-color: #37A8EC;
+  border: #1376b3 solid 2px;
+  transition: 0.5s;
+}
+
+.infoborder2:hover {
+  background-color: #1376b3;
+  box-shadow: black;
+}
+
+.infoborder3 {
+  width: 20%;
+  height: 100%;
+  background-color: #37A8EC;
+  border: #1376b3 solid 2px;
+  transition: 0.5s;
+}
+
+.infoborder3:hover {
+  background-color: #1376b3;
+  box-shadow: black;
+  
+}
+
+.infoborder4 {
+  width: 20%;
+  height: 100%;
+  background-color: #37A8EC;
+  border: #1376b3 solid 2px;
+  transition: 0.5s;
+}
+
+.infoborder4:hover {
+  background-color: #1376b3;
+  box-shadow: black;
+}
+
+.info1 {
+  width: 100%;
+  height: 33%;
+  /* background-color: red; */
+  transition: 0.5s;
+}
+
+.info2 {
+  width: 100%;
+  height: 33%;
+  /* background-color: green; */
+  transition: 0.5s;
+}
+
+.info3 {
+  width: 100%;
+  height: 34%;
+  /* background-color: red; */
+  transition: 0.5s;
+}
+
+.txt {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.info1:hover {
+  background-color: #37A8EC;
+  color: #FFF;
+}
+
+.info2:hover {
+  background-color: #37A8EC;
+  color: #FFF;
+}
+
+.info3:hover {
+  background-color: #37A8EC;
+  color: #FFF;
+}
+
+.txt {
+  position: absolute;
+
+  /* position joistic */
+
+  left: 120px;
+  
+}
+
+.oi {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+
+  left: 20px;
+  top: 20px;
+}
+
+.io {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+
+  left: 20px;
+  top: 114px;
+}
+
+.oio {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+
+  left: 20px;
+  top: 218px;
+}
+
+.i {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+
+  left: 145px;
+  top: 18px;
+}
+
+.ii {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+
+  left: 400px;
+  top: 18px;
+}
+
+.iii {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+
+  left: 640px;
+  top: 18px;
+}
+
+.iiii {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+
+  left: 890px;
+  top: 18px;
+}
+
+.txtx {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  color: #FFF;
+}
+
+.u{
+  position: absolute;
+
+  top: 40px;
+  left: 100px;
+}
+
+.uu{
+  position: absolute;
+
+  top: 40px;
+  left: 100px;
+}
+
+.uuu{
+  position: absolute;
+
+  top: 30px;
+  left: 125px;
+}
+
+.uuuu{
+  position: absolute;
+
+  top: 40px;
+  left: 100px;
+}
+
+.txtxt {
+  top: 50px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  padding: 110px 15px 15px 15px;
+}
